@@ -1,0 +1,51 @@
+Role:
+	(PK) 		Roleid				
+	(not null)	role name Cusrt/vendr/admn
+	(not null)	active 1/0
+
+User:
+	(PK)		Usereid	
+	(not null)	usrnam
+	(not null)	First name
+	(not null) Last name
+	(not null)	email
+	(not null)	password
+	(not null)	Contact_no.
+	(not null)	DOB
+	(not null) Gender
+
+
+Event:
+	(PK)		event_id
+	(FK)		user_id
+	(not null)	Title
+	(not null)	Type
+	(not null)	Event_city
+	(not null) Event_date
+	(not null)	Event_time
+	(not null)	Event_budget
+	(not null)	Service_required
+	(not null)	Event_description
+
+Bids
+	(PK)		Bid_id
+	(FK)		user_id
+	(not null)	bid_amount
+			bid_description
+
+
+Order:
+	(PK)		order id
+	(FK)		user_id
+	(FK)		bid_id
+	(FK)		event_id
+	(not null)	order_date
+	(not null)	Order_amount
+	(not null)	payment_mode
+	(not null)	pay_amount
+	(not null)	pay_status
+	
+
+
+	
+	
